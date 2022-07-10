@@ -6,9 +6,11 @@ fn main() {
 
     const THREE_HOURS_IN_SECONDS:u32= 60 * 60 * 3;
     println!("Const {}", THREE_HOURS_IN_SECONDS);
-    another_fn();
+    let y = another_fn();
+    println!("{}", y);
 }
 
-fn another_fn() {
-    println!("Another Fn");
+fn another_fn() ->i32 {
+    //println!("Another Fn");
+    5
 }
